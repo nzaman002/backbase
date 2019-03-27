@@ -1,0 +1,27 @@
+package com.backbase.qa.business;
+
+import org.openqa.selenium.WebDriver;
+
+import com.backbase.qa.ui.AddComputer;
+
+public class AddComputerFunctionalities extends AddComputer{
+
+	public AddComputerFunctionalities(WebDriver driver) {
+		super(driver);
+		
+	}
+	
+	
+	public void addNewComputer (String name , String introDate , String discontinueDate , String Company) {
+		getComputerName().sendKeys("WIN 10");
+		getIntroduceDate().sendKeys("2019-01-01");
+		getDiscontinueDate().sendKeys("2019-02-01");
+		getCreateButton().click();
+		
+		}
+	
+	public void cancelAddNewComputerPage() {
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.backbase.qa.utility;
+
+import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
+
+public class Utility {
+	
+	
+	
+	
+	
+
+}

@@ -1,0 +1,20 @@
+package com.backbase.qa.business;
+
+import org.openqa.selenium.WebDriver;
+
+import com.backbase.qa.ui.AddComputer;
+
+public class AddComputerFunctionalities extends AddComputer{
+
+	public AddComputerFunctionalities(WebDriver driver) {
+		super(driver);
+		
+	}
+	
+	
+	public void addNewComputer (String name , String introDate , String discontinueDate , String Company) {
+		
+		
+	}
+
+}

@@ -1,0 +1,7 @@
+package com.backbase.qa.business;
+
+import com.backbase.qa.ui.AddComputer;
+
+public class AddComputerFunctionalities extends AddComputer{
+
+}

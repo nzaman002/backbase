@@ -1,0 +1,48 @@
+package com.backbase.qa.utility;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+
+
+
+public class Utility {
+	Properties properties=null;
+	
+	public void loadPropertyFile() throws IOException {
+		File file = new File("src/test/resources/data.properties" ); 
+		FileInputStream fileInput = null;
+		try { fileInput = new FileInputStream(file);
+		} catch (FileNotFoundException e) {
+				  e.printStackTrace(); 
+				  } 
+		properties = new Properties();
+		properties.load(fileInput);
+		}
+	
+	
+	
+	public String getProperty(String key) {
+		String value= properties.getProperty(key);
+		return value ;
+		}
+	
+	
+		
+		
+		
+
+	
+	
+	
+	
+	
+	
+	
+
+}
